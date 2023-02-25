@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Phudu&family=Roboto+Mono:ital,wght@1,300&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+#monako {
+    border-top: 2px dotted yellow;
+    border-left: 3px dashed green;
+    border-bottom: 2px solid #5C18FF;
+    border-right: 4px solid #7FFFD4;
+    max-width: 33%;
+    max-height: 33%;
+    font-family: 'Phudu', cursive;
+    font-weight: 300;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px pink;
+    word-spacing: 4px;
+}
+
+div .nar {
+    font-family: 'Tilt Warp', cursive;
+    text-shadow: 1px 1px 3px black;
+    letter-spacing: 4px;
+}
+
+#stix {
+    margin-top: 20px;
+    border-top: 2px dotted yellow;
+    border-left: 3px dashed green;
+    border-bottom: 2px solid #5C18FF;
+    border-right: 4px solid #7FFFD4;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    max-width: 35%;
+    max-height: 35%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+div .nav {
+    font-family: 'Tilt Warp', cursive;
+    text-shadow: 1px 1px 9px rgb(85, 76, 76);
+    letter-spacing: 4px;
+}
+
+div .za4em {
+    color: red;
+    font-family: 'Mynerve', cursive;
+    font-size: 19px;
+}
+
+#monako :hover {
+    background-color: #5C18FF;
+}
+
+div .love {
+    font-family: 'Tilt Warp', cursive;
+    font-size: 19px;
+    background-color: #7FFFD4;
+}
