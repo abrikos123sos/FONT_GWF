@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="register">
+        <fieldset class="field" name="set">
+            <form>
+                <p class="size">Для публикаций вашей статьи заполните, пожалуйста, следующую форму:
+                </p>
+                <label>Название статьи:
+                <input class="text" name="txt">
+            </label><br>
+                <div class="select1">
+                    <label>Рубрика:
+                    <select class="select2" name="selected">
+                        <option value="1">Программирование</option>
+                        <option value="2">Кулинария</option>
+                        <option value="3">Спорт</option>
+                    </select>
+                </label>
+                </div>
+                <div class="checkradio">
+                    <label>Публикация:<div class="radiocheck">
+            <div class="put"> <input  type="radio" name="check1"><span>На сайте</span></div>
+            <div class="put1">  <input type="radio" name="check1"><span>В журнале</span></div>
+            <div class="put2"><input  type="radio" name="check1"><span>На сайте в журнале</span></div>
+                </label>
+                </div>
+                <label>Разрешить комментарий:
+                    <input class="checbox" name="check" type="checkbox"> 
+                </label><br>
+                <div>
+                    <label>Текст статьи:<br>
+                    <textarea class="mytext" name="mytxt"></textarea>
+                </label><br>
+                    <button class="btn" name="buttn">Опубликовать</button>
+                </div>
+        </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
