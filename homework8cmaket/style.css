@@ -1,0 +1,144 @@
+#divmaket {
+    width: auto;
+}
+
+.center {
+    width: 100%;
+    padding: 20px;
+    background-color: skyblue;
+    text-align: center;
+    margin: 0;
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
+    animation: bord 5s infinite ease-in-out alternate;
+}
+
+.left {
+    margin: 0;
+    height: 300px;
+    width: 200px;
+    background-color: yellow;
+    float: left;
+    animation: let 5s infinite ease-in-out alternate;
+}
+
+.more {
+    font-weight: 400;
+}
+
+.bottom {
+    padding: 10px;
+    background-color: skyblue;
+    color: blue;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    overflow: hidden;
+    animation: bot 5s infinite ease-in-out alternate;
+}
+
+.football {
+    background: url(movie.png);
+    background-repeat: repeat-y;
+    background-position: right top;
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+    animation: balls 5s infinite ease-in-out alternate;
+}
+
+.txt {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+.foot1 {
+    margin-left: 10px;
+}
+
+.JoinTclub {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid;
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    background-color: aqua;
+    padding-top: 10px;
+    margin-left: 90%;
+}
+
+@keyframes balls {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: pink;
+    }
+    50% {
+        background-color: black;
+    }
+    75% {
+        background-color: coral;
+    }
+    100% {
+        background-color: rgb(128, 199, 119);
+    }
+}
+
+@keyframes bord {
+    0% {
+        background-color: blue;
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: red;
+    }
+    75% {
+        background-color: rgb(95, 128, 189);
+    }
+    100% {
+        background-color: rgb(128, 199, 119);
+    }
+}
+
+@keyframes let {
+    0% {
+        background-color: rgb(42, 42, 88);
+    }
+    25% {
+        background-color: rgb(207, 99, 162);
+    }
+    50% {
+        background-color: rgb(156, 77, 77);
+    }
+    75% {
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        background-color: rgb(128, 199, 119);
+    }
+}
+
+@keyframes bot {
+    0% {
+        background-color: rgb(55, 145, 110);
+    }
+    25% {
+        background-color: rgb(224, 179, 141);
+    }
+    50% {
+        background-color: rgb(204, 137, 198);
+    }
+    75% {
+        background-color: rgb(119, 207, 207);
+    }
+    100% {
+        background-color: rgb(128, 199, 119);
+    }
+}
