@@ -1,0 +1,66 @@
+body {
+    margin: 40px;
+    background-color: #31353F;
+}
+
+.bgsvg {
+    display: inline-block;
+    margin-bottom: 40px;
+    background: url("http://fdrp.ru/xab2Yauw.svg") no-repeat;
+}
+
+.bgsvg.s {
+    background-size: 30px 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 30px;
+    height: 50px;
+}
+
+.bgsvg.m {
+    background-size: 60px 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 60px;
+    height: 100px;
+}
+
+.bgsvg.l {
+    background-size: 90px 150px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 90px;
+    height: 150px;
+}
+
+.bgsvg.xl {
+    background-size: 120px 200px;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 120px;
+    height: 200px;
+}
+
+.imgsvg.s {
+    margin: 0 20px;
+    width: 30px;
+    height: 50px;
+}
+
+.imgsvg.m {
+    margin: 0 40px;
+    width: 60px;
+    height: 100px;
+}
+
+.imgsvg.l {
+    margin: 0 60px;
+    width: 90px;
+    height: 150px;
+}
+
+.imgsvg.xl {
+    margin: 0 80px;
+    width: 120px;
+    height: 200px;
+}

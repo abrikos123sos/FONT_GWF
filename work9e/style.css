@@ -1,0 +1,43 @@
+ #maketflex {
+     display: block;
+     height: auto;
+ }
+ 
+ .head1 {
+     display: flex;
+     width: auto;
+     height: 100px;
+     background-color: aqua;
+     font-weight: 500;
+     text-transform: uppercase;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .left {
+     display: flex;
+     width: 20%;
+     height: auto;
+     flex-grow: 1;
+     flex-direction: column;
+     background-color: firebrick;
+     float: left;
+ }
+ 
+ .center {
+     background: url(movie.png);
+     background-repeat: repeat-y;
+     background-position-x: 100%;
+     width: 50%;
+     height: auto;
+     flex-grow: 2;
+     flex-flow: column wrap;
+ }
+ 
+ .img p {
+     float: left;
+ }
+ 
+ h1 {
+     text-align: center;
+ }
