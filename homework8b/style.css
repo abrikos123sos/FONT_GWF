@@ -12,12 +12,14 @@
     margin-left: -7%;
     position: absolute;
     z-index: 0;
+    transition: 0.2s ease-in-out;
 }
 
 .MnW {
     margin-left: 16%;
     position: absolute;
     z-index: 0;
+    transition: 0.2s ease-in-out;
 }
 
 .Smoke {
@@ -31,6 +33,7 @@
     margin-top: 18%;
     position: absolute;
     z-index: 0;
+    transition: 0.2s ease-in-out;
 }
 
 .txt {
@@ -39,13 +42,16 @@
 }
 
 .bio:hover {
+    transform: scale(1.2, 1.2);
     z-index: 6;
 }
 
 .MnW:hover {
+    transform: scale(1.2, 1.2);
     z-index: 6;
 }
 
 .YnY:hover {
+    transform: scale(1.2, 1.2);
     z-index: 6;
 }
