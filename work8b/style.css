@@ -9,6 +9,7 @@
 }
 
 .bio {
+    transition: 0.6s ease-in-out;
     margin-left: -7%;
     position: absolute;
     z-index: 0;
@@ -16,6 +17,7 @@
 }
 
 .MnW {
+    transition: 0.6s ease-in-out;
     margin-left: 16%;
     position: absolute;
     z-index: 0;
@@ -23,6 +25,7 @@
 }
 
 .Smoke {
+    transition: 0.6s ease-in-out;
     margin-top: 5%;
     position: absolute;
     z-index: 5;
