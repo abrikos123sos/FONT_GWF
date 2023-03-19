@@ -1,43 +1,91 @@
- #maketflex {
-     display: block;
-     height: auto;
- }
- 
- .head1 {
-     display: flex;
-     width: auto;
-     height: 100px;
-     background-color: aqua;
-     font-weight: 500;
-     text-transform: uppercase;
-     justify-content: center;
-     align-items: center;
- }
- 
- .left {
-     display: flex;
-     width: 20%;
-     height: auto;
-     flex-grow: 1;
-     flex-direction: column;
-     background-color: firebrick;
-     float: left;
- }
- 
- .center {
-     background: url(movie.png);
-     background-repeat: repeat-y;
-     background-position-x: 100%;
-     width: 50%;
-     height: auto;
-     flex-grow: 2;
-     flex-flow: column wrap;
- }
- 
- .img p {
-     float: left;
- }
- 
- h1 {
-     text-align: center;
- }
+* {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 1980px) {
+    .content {
+        display: flex;
+    }
+    .content nav {
+        flex-grow: 1;
+        flex: 0 0 auto;
+        padding-left: -30px;
+        flex-basis: 200px;
+        background-color: #1c88ee;
+    }
+    .content div {
+        flex-grow: 3;
+        background-image: url(movie.png);
+        background-size: 100px;
+        background-position: 100%;
+        background-repeat: repeat-y;
+    }
+    .content img {
+        float: left;
+        margin: 15px;
+    }
+    .content p {
+        clear: right;
+        padding: 15px;
+    }
+    .content li {
+        width: 50px;
+    }
+    .content h3 {
+        padding-left: 5px;
+    }
+    header {
+        text-align: center;
+        font-size: 20px;
+        color: rgb(226, 43, 43);
+        background-color: rgb(56, 65, 146);
+        padding: 1px;
+    }
+    footer {
+        text-align: center;
+        font-size: 20px;
+        color: rgb(226, 43, 43);
+        background-color: rgb(56, 65, 146);
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shell {
+        size: 30%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content nav {
+        background-color: white;
+    }
+    .content div {
+        background-image: none;
+    }
+    header {
+        position: absolute;
+        visibility: hidden;
+    }
+    footer {
+        position: absolute;
+        visibility: hidden;
+    }
+    .content li {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        display: inline;
+    }
+    .content ul {
+        margin-left: -30px;
+        word-spacing: 3px;
+    }
+    #cent {
+        text-align: center;
+    }
+}
