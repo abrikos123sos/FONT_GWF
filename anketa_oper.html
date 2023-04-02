@@ -18,16 +18,8 @@
         let female = ('Женский');
         let pension = ('Вы на пенсий: ');
         let gender = confirm("Вы мужского пола?");
-        if (gender == true) {
-            gender = "Мужской";
-        } else {
-            gender = "Женский";
-        }
-        if (60 < age) {
-            pension = "Да";
-        } else {
-            pension = "Нет";
-        }
+        gender = (gender == true) ? 'Мужской' : 'Женский';
+        pension = (60 < age) ? 'Да' : 'нет';
         alert("Ваше ФИО: " + names + ' ' + namFam + ' ' + namOt + "\n" + "Ваш возраст: " + age + "\n" + "Ваш возраст в днях: " +
             age * 365 + "\n" + male + gender + "\n" + "Вы на пенсий: " + pension);
     </script>
