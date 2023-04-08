@@ -29,7 +29,7 @@ function addCountry(countryName, capitalName) {
     countryZ[countryName] = capitalName;
 }
 
-function deleteCountry(countryName, capitalName) {
+function deleteCountry(countryName) {
     delete countryZ[countryName];
 }
 
