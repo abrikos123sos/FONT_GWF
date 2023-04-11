@@ -31,6 +31,7 @@ for (let i = 0; i < txt2.length; i++) {
     txt2[i].style.fontSize = '18px';
     txt2[i].style.fontStyle = 'oblique';
     txt2[i].style.textShadow = '0px 0px 6px black';
+    txt2[i].style.maxWidth = '200px';
     txt2[i].style.cursor = 'default';
 }
 
