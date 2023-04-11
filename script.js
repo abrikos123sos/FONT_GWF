@@ -1,51 +1,45 @@
-let getCount;
-let getCapital;
-let getTake;
-let apiCount;
-let getScroll;
-let delCountry;
-let countryZ = {};
+let obj = {
+    fontWeight: '900',
+    fontSize: '24px',
+    cursor: 'default'
+};
+let firstname = document.getElementById('names');
+Object.assign(firstname.style, obj);
 
-
-get.onclick = function() {
-    getCount = prompt('Введите название страны');
-    getCapital = prompt('Введите название стoлицы');
-    addCountry(getCount, getCapital);
+let birt = document.getElementsByClassName('birthdate');
+for (let i = 0; i < birt.length; i++) {
+    birt[i].style.color = 'green';
+    birt[i].style.fontSize = '18px';
+    birt[i].style.cursor = 'default';
 }
-take.onclick = function() {
-    getTake = prompt('Введите название страны');
-    alert(getCountryInfo(getTake));
+let champ = document.getElementsByClassName('champion');
+for (let i = 0; i < champ.length; i++) {
+    champ[i].style.color = 'red';
+    champ[i].style.fontSize = '18px';
+    champ[i].style.cursor = 'default';
 }
-
-scrolls.onclick = function() {
-    alert(listCountry(getScroll));
+let txt = document.getElementsByClassName('text');
+for (let i = 0; i < txt.length; i++) {
+    txt[i].style.color = 'blue';
+    txt[i].style.fontSize = '18px';
+    txt[i].style.fontStyle = 'italic';
+    txt[i].style.cursor = 'default';
 }
-del.onclick = function() {
-    delCountry = prompt('Введите название страны');
-    deleteCountry(delCountry);
-}
-
-function addCountry(countryName, capitalName) {
-    countryZ[countryName] = capitalName;
-}
-
-function deleteCountry(countryName) {
-    delete countryZ[countryName];
-}
-
-function getCountryInfo(countryName) {
-    if (countryName in countryZ) {
-        return 'Страна: ' + countryName + ' Столица: ' + countryZ[countryName];
-    } else
-        return 'Нет информаций о стране' + countryName + '! ';
+let txt2 = document.getElementsByClassName('text2');
+for (let i = 0; i < txt2.length; i++) {
+    txt2[i].style.color = 'white';
+    txt2[i].style.fontSize = '18px';
+    txt2[i].style.fontStyle = 'oblique';
+    txt2[i].style.textShadow = '0px 0px 6px black';
+    txt2[i].style.cursor = 'default';
 }
 
-function listCountry() {
-    let res = "";
-    for (let CN in countryZ)
-        res += '\n' + getCountryInfo(CN);
-    return res;
+let txt3 = document.getElementsByClassName('text3');
+for (let i = 0; i < txt3.length; i++) {
+    txt3[i].style.color = 'purple';
+    txt3[i].style.fontSize = '19px';
+    txt3[i].style.fontStyle = 'oblique';
+    txt3[i].style.fontWeight = 'bold';
+    txt3[i].style.borderStyle = 'dashed';
+    txt3[i].style.cursor = 'default';
 }
-addCountry('Беларусь', 'Минск');
-addCountry('Бразилия', 'Рио-де-Жанейро');
-addCountry('Япония', 'Токио');
