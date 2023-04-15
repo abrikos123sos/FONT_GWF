@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+#container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 180px;
+  grid-template-rows: 70px 100px 100px 100px 200px 200px 200px 200px 200px;
+  margin-left: 25%;
+}
+#container nav {
+  grid-column: 1/5;
+  grid-row: 1;
+  border-bottom: 2px solid;
+}
+#container nav ul {
+  margin-left: -122px;
+  list-style-type: none;
+}
+#container nav ul .li1 {
+  color: black;
+}
+#container nav li {
+  display: inline-block;
+  margin-left: 82px;
+}
+#container nav a {
+  position: relative;
+  color: gray;
+  font-size: 18px;
+  text-decoration: none;
+}
+#container nav a:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  transition: width 0.2s ease-in-out;
+}
+#container nav a:hover {
+  color: black;
+}
+#container nav a:hover:after, #container nav a:focus:after {
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  grid-column: 1/5;
+  grid-row: 2;
+}
+.content .content1 {
+  font-family: "Ubuntu", sans-serif;
+  max-width: 20px;
+}
+.content .content2 {
+  justify-self: center;
+  align-self: center;
+  max-width: 160px;
+  font-size: 14px;
+  grid-column: 2;
+}
+.content .content3 {
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 15px;
+  justify-self: end;
+  align-self: center;
+  margin-right: -25px;
+  transform: rotate(270deg);
+  cursor: default;
+}
+
+.picture {
+  display: grid;
+  grid-column: 1/5;
+  grid-row: 2/5;
+}
+.picture img {
+  grid-column: 1;
+  grid-row: 4;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.content_about {
+  grid-column: 1/5;
+  font-family: "Open Sans", sans-serif;
+  grid-row: 6;
+  justify-self: center;
+  align-self: center;
+  font-weight: 900;
+  cursor: default;
+  transition: opacity 1s;
+}
+.content_about .spce {
+  margin-left: 90px;
+}
+.content_about .spce2 {
+  margin-left: 60px;
+}
+.content_about h1 {
+  margin-top: 10%;
+  margin-left: 35%;
+  font-family: "Open Sans", sans-serif;
+}
+.content_about .txt1 {
+  margin-left: -25px;
+}
+.content_about .txt2 {
+  margin-left: 10px;
+}
+.content_about p {
+  font-size: 18px;
+  margin-left: 20%;
+}
+.content_about span {
+  margin-left: -50px;
+}/*# sourceMappingURL=style.css.map */
