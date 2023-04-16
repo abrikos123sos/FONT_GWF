@@ -3,7 +3,7 @@
 #container {
   display: grid;
   grid-template-columns: 150px 150px 150px 180px;
-  grid-template-rows: 70px 100px 100px 100px 200px 200px 200px 200px 200px;
+  grid-template-rows: 70px 100px 100px 100px 200px 200px 200px 200px 200px 200px;
   margin-left: 25%;
 }
 #container nav {
@@ -18,17 +18,17 @@
 #container nav ul .li1 {
   color: black;
 }
-#container nav li {
+#container li {
   display: inline-block;
   margin-left: 82px;
 }
-#container nav a {
+#container a {
   position: relative;
   color: gray;
   font-size: 18px;
   text-decoration: none;
 }
-#container nav a:after {
+#container a:after {
   display: block;
   content: "";
   position: absolute;
@@ -38,30 +38,29 @@
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
   transition: width 0.2s ease-in-out;
 }
-#container nav a:hover {
+#container a:hover {
   color: black;
 }
-#container nav a:hover:after, #container nav a:focus:after {
+#container a:hover:after, #container a:focus:after {
   width: 100%;
 }
-
-.content {
+#container .content {
   display: grid;
   grid-column: 1/5;
   grid-row: 2;
 }
-.content .content1 {
+#container .content .content1 {
   font-family: "Ubuntu", sans-serif;
   max-width: 20px;
 }
-.content .content2 {
+#container .content .content2 {
   justify-self: center;
   align-self: center;
   max-width: 160px;
   font-size: 14px;
   grid-column: 2;
 }
-.content .content3 {
+#container .content .content3 {
   grid-column: 3;
   grid-row: 1;
   font-size: 15px;
@@ -71,49 +70,208 @@
   transform: rotate(270deg);
   cursor: default;
 }
-
-.picture {
-  display: grid;
+#container .picture {
   grid-column: 1/5;
   grid-row: 2/5;
 }
-.picture img {
+#container .picture .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  border-radius: 0 3px 3px 0;
+}
+#container .picture .prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#container .picture .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  border-radius: 0 3px 3px 0;
+}
+#container .picture .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#container .picture .next {
+  right: 74.7%;
+  border-radius: 3px 0 0 3px;
+}
+#container .picture img {
   grid-column: 1;
   grid-row: 4;
   width: 100%;
   margin-top: 20%;
 }
-
-.content_about {
+#container .content_about {
   grid-column: 1/5;
   font-family: "Open Sans", sans-serif;
   grid-row: 6;
   justify-self: center;
   align-self: center;
   font-weight: 900;
+  text-align: center;
   cursor: default;
 }
-.content_about .spce {
-  margin-left: 90px;
+#container .skills {
+  grid-column: 1/5;
+  grid-row: 7;
+  justify-self: center;
+  margin-top: 20%;
+  text-align: center;
 }
-.content_about .spce2 {
-  margin-left: 60px;
+#container .skills p {
+  text-align: center;
 }
-.content_about h1 {
-  margin-top: 10%;
-  margin-left: 35%;
-  font-family: "Open Sans", sans-serif;
+#container .instruments {
+  grid-column: 1/5;
+  grid-row: 8;
+  justify-self: center;
+  align-self: center;
+  margin-top: 17%;
+  text-align: center;
+  word-spacing: 112px;
 }
-.content_about .txt1 {
-  margin-left: -25px;
+#container .instruments p {
+  color: gray;
+  padding-bottom: 20px;
 }
-.content_about .txt2 {
-  margin-left: 10px;
+#container .instruments .figma {
+  display: inline-block;
 }
-.content_about p {
-  font-size: 18px;
-  margin-left: 20%;
+#container .instruments img {
+  width: 70px;
+  height: 70px;
 }
-.content_about span {
-  margin-left: -50px;
+#container .aftereffects {
+  display: inline-block;
+}
+#container .aftereffects img {
+  width: 70px;
+  height: 70px;
+}
+#container .illustrator {
+  display: inline-block;
+}
+#container .illustrator img {
+  width: 70px;
+  height: 70px;
+}
+#container .photoshop {
+  display: inline-block;
+}
+#container .photoshop img {
+  width: 70px;
+  height: 70px;
+}
+#container .stars {
+  grid-column: 1;
+  grid-row: 9;
+  display: inline-block;
+  padding-top: 20px;
+  word-spacing: 2px;
+}
+#container .stars .opacity {
+  opacity: 50%;
+}
+#container .stars img {
+  width: 10px;
+  height: 10px;
+}
+#container .stars1 {
+  grid-column: 2;
+  grid-row: 9;
+  display: inline-block;
+  padding-top: 20px;
+  word-spacing: 2px;
+  justify-self: center;
+}
+#container .stars1 .opacity1 {
+  opacity: 50%;
+}
+#container .stars1 .opacity {
+  opacity: 50%;
+}
+#container .stars1 img {
+  width: 10px;
+  height: 10px;
+}
+#container .stars2 {
+  grid-column: 3;
+  grid-row: 9;
+  display: inline-block;
+  padding-top: 20px;
+  word-spacing: 2px;
+  margin-left: 72px;
+}
+#container .stars2 .opacity1 {
+  opacity: 50%;
+}
+#container .stars2 .opacity {
+  opacity: 50%;
+}
+#container .stars2 img {
+  width: 10px;
+  height: 10px;
+}
+#container .stars3 {
+  grid-column: 4;
+  grid-row: 9;
+  display: inline-block;
+  padding-top: 20px;
+  word-spacing: 2px;
+  justify-self: end;
+}
+#container .stars3 .opacity1 {
+  opacity: 50%;
+}
+#container .stars3 .opacity {
+  opacity: 50%;
+}
+#container .stars3 img {
+  width: 10px;
+  height: 10px;
+}
+#container .dot {
+  display: inline-block;
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin-top: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-left: -60px;
+  transition: background-color 0.6s ease;
+}
+#container .dot:active {
+  background-color: #717171;
+}
+#container .dot:active:hover {
+  box-shadow: 0 0 10px red;
+  background-color: red;
+}
+#container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 4;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
