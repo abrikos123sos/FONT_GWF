@@ -1,279 +1,100 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
-    #container {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Raleway&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+#container {
+    display: grid;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    .content_body {
         display: grid;
-        grid-template-columns: 150px 150px 150px 180px;
-        grid-template-rows: 70px 100px 100px 100px 200px 200px 200px 200px 200px 200px;
-        margin-left: 25%;
-        nav {
-            grid-column: 1/5;
-            grid-row: 1;
-            border-bottom: 2px solid;
-            ul {
-                margin-left: -122px;
-                list-style-type: none;
-                .li1 {
+        grid-template-columns: 5fr;
+        grid-template-rows: 70px;
+        grid-template-areas: "header nav";
+        border-bottom: 2px solid black;
+        .header {
+            grid-area: header;
+            align-self: center;
+            nav {
+                display: grid;
+                grid-template-columns: repeat(5, auto);
+                justify-content: space-between;
+                .home {
                     color: black;
+                    text-transform: uppercase;
                 }
-            }
-        }
-        li {
-            display: inline-block;
-            margin-left: 82px;
-        }
-        a {
-            position: relative;
-            color: gray;
-            font-size: 18px;
-            text-decoration: none;
-            &:after {
-                display: block;
-                content: "";
-                position: absolute;
-                left: 0;
-                width: 0px;
-                height: 2px;
-                background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-                transition: width 0.2s ease-in-out;
-            }
-            &:hover {
-                color: black;
-            }
-            &:hover:after,
-            &:focus:after {
-                width: 100%;
-            }
-        }
-        .content {
-            display: grid;
-            grid-column: 1/5;
-            grid-row: 2;
-            .content1 {
-                font-family: 'Ubuntu', sans-serif;
-                max-width: 20px;
-            }
-            .content2 {
-                justify-self: center;
-                align-self: center;
-                max-width: 160px;
-                font-size: 14px;
-                grid-column: 2;
-            }
-            .content3 {
-                grid-column: 3;
-                grid-row: 1;
-                font-size: 15px;
-                justify-self: end;
-                align-self: center;
-                margin-right: -25px;
-                transform: rotate(270deg);
-                cursor: default;
-            }
-        }
-        .picture {
-            grid-column: 1/5;
-            grid-row: 2/5;
-            .prev {
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                margin-top: -22px;
-                padding: 16px;
-                color: black;
-                font-weight: bold;
-                font-size: 18px;
-                transition: 0.5s ease-in-out;
-                border-radius: 0 3px 3px 0;
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
+                a {
+                    position: relative;
+                    color: gray;
+                    text-decoration: none;
+                    &:after {
+                        display: block;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        height: 2px;
+                        transition: width 0.2s ease-in-out;
+                    }
+                    &:hover {
+                        color: black;
+                        text-shadow: 0 0 2px black;
+                    }
                 }
-            }
-            .next {
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                margin-top: -22px;
-                padding: 16px;
-                color: black;
-                font-weight: bold;
-                font-size: 18px;
-                transition: 0.5s ease-in-out;
-                border-radius: 0 3px 3px 0;
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
-                }
-            }
-            .next {
-                right: 74.7%;
-                border-radius: 3px 0 0 3px;
-            }
-            img {
-                grid-column: 1;
-                grid-row: 4;
-                width: 100%;
-                margin-top: 20%;
-            }
-        }
-        .content_about {
-            grid-column: 1/5;
-            font-family: 'Open Sans', sans-serif;
-            grid-row: 6;
-            justify-self: center;
-            align-self: center;
-            font-weight: 900;
-            text-align: center;
-            cursor: default;
-        }
-        .skills {
-            grid-column: 1/5;
-            grid-row: 7;
-            justify-self: center;
-            margin-top: 20%;
-            text-align: center;
-            p {
-                //   margin-left: -40px;
-                text-align: center;
-            }
-        }
-        .instruments {
-            grid-column: 1/5;
-            grid-row: 8;
-            justify-self: center;
-            align-self: center;
-            margin-top: 17%;
-            text-align: center;
-            word-spacing: 112px;
-            p {
-                color: gray;
-                padding-bottom: 20px;
-            }
-            .figma {
-                display: inline-block;
-            }
-            img {
-                width: 70px;
-                height: 70px;
-            }
-        }
-        .aftereffects {
-            display: inline-block;
-            img {
-                width: 70px;
-                height: 70px;
-            }
-        }
-        .illustrator {
-            display: inline-block;
-            img {
-                width: 70px;
-                height: 70px;
-            }
-        }
-        .photoshop {
-            display: inline-block;
-            img {
-                width: 70px;
-                height: 70px;
-            }
-        }
-        .stars {
-            grid-column: 1;
-            grid-row: 9;
-            display: inline-block;
-            padding-top: 20px;
-            word-spacing: 2px;
-            .opacity {
-                opacity: 50%;
-            }
-            img {
-                width: 10px;
-                height: 10px;
-            }
-        }
-        .stars1 {
-            grid-column: 2;
-            grid-row: 9;
-            display: inline-block;
-            padding-top: 20px;
-            word-spacing: 2px;
-            justify-self: center;
-            .opacity1 {
-                opacity: 50%;
-            }
-            .opacity {
-                opacity: 50%;
-            }
-            img {
-                width: 10px;
-                height: 10px;
-            }
-        }
-        .stars2 {
-            grid-column: 3;
-            grid-row: 9;
-            display: inline-block;
-            padding-top: 20px;
-            word-spacing: 2px;
-            margin-left: 72px;
-            .opacity1 {
-                opacity: 50%;
-            }
-            .opacity {
-                opacity: 50%;
-            }
-            img {
-                width: 10px;
-                height: 10px;
-            }
-        }
-        .stars3 {
-            grid-column: 4;
-            grid-row: 9;
-            display: inline-block;
-            padding-top: 20px;
-            word-spacing: 2px;
-            justify-self: end;
-            .opacity1 {
-                opacity: 50%;
-            }
-            .opacity {
-                opacity: 50%;
-            }
-            img {
-                width: 10px;
-                height: 10px;
-            }
-        }
-        .dot {
-            display: inline-block;
-            cursor: pointer;
-            height: 13px;
-            width: 13px;
-            margin-top: 100px;
-            background-color: #bbb;
-            border-radius: 50%;
-            margin-left: -60px;
-            transition: background-color 0.6s ease;
-            &:active {
-                background-color: #717171;
-                &:hover {
-                    box-shadow: 0 0 10px red;
-                    background-color: red;
-                }
-            }
-        }
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @keyframes fade {
-            from {
-                opacity: 4;
-            }
-            to {
-                opacity: 1;
             }
         }
     }
+    .summary {
+        display: grid;
+        grid-template-columns: 5fr 5fr 5fr;
+        grid-template-rows: 120px;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        .picture_sliders {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+        }
+        .name {
+            font-weight: 900;
+            font-size: 35px;
+            justify-self: start;
+        }
+        .info {
+            font-weight: 900;
+        }
+        .ru {
+            color: gray;
+        }
+        .language {
+            justify-self: end;
+            transform: rotate(270deg);
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+    }
+    .img_sliders {
+        display: grid;
+        grid-template-columns: 10fr;
+        grid-template-rows: 5fr;
+        .picture_sliders {
+            width: 100%;
+        }
+    }
+    .content-about {
+        display: grid;
+        grid-template-columns: 5fr;
+        grid-template-rows: 10fr 10fr;
+        align-self: center;
+    }
+}
