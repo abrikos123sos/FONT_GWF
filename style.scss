@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -63,7 +64,7 @@ li {
         .picture_sliders {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(1, auto);
+            grid-template-columns: repeat(2, auto);
         }
         .name {
             font-weight: 900;
@@ -76,25 +77,115 @@ li {
         .ru {
             color: gray;
         }
-        .language {
-            justify-self: end;
-            transform: rotate(270deg);
-            text-transform: uppercase;
-            font-weight: 900;
-        }
     }
-    .img_sliders {
-        display: grid;
-        grid-template-columns: 10fr;
-        grid-template-rows: 5fr;
-        .picture_sliders {
-            width: 100%;
-        }
+    .language {
+        transform: rotate(270deg);
+        font-weight: 900;
+        justify-self: end;
+        text-transform: uppercase;
+    }
+    .picture_sliders {
+        width: 100%;
     }
     .content-about {
         display: grid;
-        grid-template-columns: 5fr;
-        grid-template-rows: 10fr 10fr;
-        align-self: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 5fr;
+        cursor: default;
+        .about_me_txt {
+            grid-row: 2;
+            p {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+    .skills_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 3fr;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        cursor: default;
+        .container_stars {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            margin-left: 2%;
+            .opacity {
+                opacity: 50%;
+            }
+        }
+        ul {
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-rows: 1fr;
+            justify-content: space-between;
+        }
+        li {
+            display: inline-block;
+            transition: 1s ease-in-out;
+            &:hover {
+                background-color: orange;
+                box-shadow: 0 0 6px orange;
+            }
+            img {
+                padding-bottom: 20px;
+                width: 70px;
+            }
+        }
+    }
+    #portfolio_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        .camera {
+            color: black;
+            padding-bottom: 5%;
+        }
+        .reebokpage {
+            color: black;
+            padding-bottom: 5%;
+        }
+        .homepage {
+            color: black;
+            padding-bottom: 5%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .social_network {
+        display: grid;
+        cursor: pointer;
+        .img_social_network {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            margin-top: 5%;
+            justify-content: space-around;
+        }
+        .button_send {
+            margin-top: 2%;
+            cursor: pointer;
+            border: 1px solid orange;
+            padding: 15px 40px 15px 40px;
+            font-size: 11px;
+            width: 120px;
+            font-weight: bold;
+            justify-self: center;
+            text-transform: uppercase;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                background-color: orange;
+                color: white;
+                box-shadow: 0 0 8px orange;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    footer {
+        margin-top: 3%;
+        color: gray;
+        font-weight: bold;
     }
 }

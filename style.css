@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -65,7 +66,7 @@ li {
 #container .summary .picture_sliders {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(2, auto);
 }
 #container .summary .name {
   font-weight: 900;
@@ -78,23 +79,113 @@ li {
 #container .summary .ru {
   color: gray;
 }
-#container .summary .language {
-  justify-self: end;
+#container .language {
   transform: rotate(270deg);
-  text-transform: uppercase;
   font-weight: 900;
+  justify-self: end;
+  text-transform: uppercase;
 }
-#container .img_sliders {
-  display: grid;
-  grid-template-columns: 10fr;
-  grid-template-rows: 5fr;
-}
-#container .img_sliders .picture_sliders {
+#container .picture_sliders {
   width: 100%;
 }
 #container .content-about {
   display: grid;
-  grid-template-columns: 5fr;
-  grid-template-rows: 10fr 10fr;
-  align-self: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 5fr;
+  cursor: default;
+}
+#container .content-about .about_me_txt {
+  grid-row: 2;
+}
+#container .content-about .about_me_txt p {
+  font-size: 18px;
+  font-weight: bold;
+}
+#container .skills_info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 3fr;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  cursor: default;
+}
+#container .skills_info .container_stars {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  margin-left: 2%;
+}
+#container .skills_info .container_stars .opacity {
+  opacity: 50%;
+}
+#container .skills_info ul {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+}
+#container .skills_info li {
+  display: inline-block;
+  transition: 1s ease-in-out;
+}
+#container .skills_info li:hover {
+  background-color: orange;
+  box-shadow: 0 0 6px orange;
+}
+#container .skills_info li img {
+  padding-bottom: 20px;
+  width: 70px;
+}
+#container #portfolio_info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+}
+#container #portfolio_info .camera {
+  color: black;
+  padding-bottom: 5%;
+}
+#container #portfolio_info .reebokpage {
+  color: black;
+  padding-bottom: 5%;
+}
+#container #portfolio_info .homepage {
+  color: black;
+  padding-bottom: 5%;
+}
+#container #portfolio_info img {
+  width: 100%;
+}
+#container .social_network {
+  display: grid;
+  cursor: pointer;
+}
+#container .social_network .img_social_network {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 5%;
+  justify-content: space-around;
+}
+#container .social_network .button_send {
+  margin-top: 2%;
+  cursor: pointer;
+  border: 1px solid orange;
+  padding: 15px 40px 15px 40px;
+  font-size: 11px;
+  width: 120px;
+  font-weight: bold;
+  justify-self: center;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+#container .social_network .button_send:hover {
+  background-color: orange;
+  color: white;
+  box-shadow: 0 0 8px orange;
+  letter-spacing: 2px;
+}
+#container footer {
+  margin-top: 3%;
+  color: gray;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
