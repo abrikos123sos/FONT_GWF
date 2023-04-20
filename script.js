@@ -1,3 +1,5 @@
+let changePhoto = 0;
+
 function slideShow() {
     setTimeout(slideShow, 5000);
     let i;
