@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+#container {
+  cursor: default;
+}
+
 .title-head {
   cursor: default;
   display: grid;
@@ -198,4 +202,195 @@ a {
 }
 .well .list li {
   list-style-type: square;
+}
+
+.title_about {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 100px;
+  align-items: end;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.title_about .p1 {
+  grid-column: 2;
+}
+
+.about_course {
+  display: grid;
+  grid-template-columns: 30px 250px 180px auto 40px;
+  grid-template-rows: 80px 20px 80px 20px 80px;
+}
+.about_course .exp_course {
+  grid-row: 5;
+  grid-column: 2;
+  border: 2px solid rgb(196, 4, 68);
+  border-radius: 10px 1px 10px 1px;
+}
+.about_course .exp_course .exp {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.about_course .teach_course {
+  grid-row: 3;
+  grid-column: 2;
+  border: 2px solid rgb(196, 4, 68);
+  border-radius: 10px 1px 10px 1px;
+}
+.about_course .teach_course .teach {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.about_course .bel_course {
+  grid-row: 1;
+  grid-column: 2;
+  border: 2px solid rgb(196, 4, 68);
+  border-radius: 10px 1px 10px 1px;
+}
+.about_course .bel_course .bel {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.about_course .img {
+  grid-row: 1/6;
+  grid-column: 4;
+  background: url(image/img.png) center;
+  background-size: cover;
+}
+
+.classes {
+  display: grid;
+  grid-template-columns: 30px 250px 250px 500px auto;
+  grid-template-rows: 100px 100px 150px 100px;
+}
+.classes .classes-p1 {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: end;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+.classes .classes-p2 {
+  grid-row: 2;
+  grid-column: 2/4;
+  font-weight: bold;
+}
+.classes .classes-p3 {
+  grid-row: 3;
+  grid-column: 2/4;
+  font-weight: bold;
+}
+.classes .classes-btn {
+  grid-row: 4;
+  grid-column: 1/6;
+  justify-self: center;
+  font-weight: bold;
+  align-self: center;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(175, 4, 47);
+  border: 2px solid rgb(175, 4, 47);
+  border-radius: 10px 1px 10px 1px;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.classes .classes-btn:hover {
+  box-shadow: 0 0 25px rgb(175, 4, 47);
+  letter-spacing: 1px;
+}
+.classes .classes-btn .btn_classes {
+  margin-top: 10px;
+}
+.classes .classes-btn a {
+  color: white;
+  font-size: 14px;
+}
+.classes .img2 {
+  grid-row: 2/4;
+  grid-column: 4;
+  background: url(image/img2.png) center;
+  background-size: cover;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 30px 150px 250px 50px 150px 350px 150px auto;
+  grid-template-rows: 100px 250px 250px 100px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.works .textwork {
+  grid-row: 1;
+  grid-column: 2/4;
+  font-size: 20px;
+  font-weight: bold;
+  align-self: center;
+  font-family: "Open Sans", sans-serif;
+}
+.works .img3 {
+  grid-row: 2;
+  grid-column: 2/5;
+  background: url(image/img3.png) center;
+  background-size: cover;
+}
+.works .img4 {
+  grid-row: 2;
+  grid-column: 5/7;
+  background: url(image/img4.png) center;
+  background-size: cover;
+}
+.works .img5 {
+  grid-row: 2;
+  grid-column: 7;
+  background: url(image/img5.png) center;
+  background-size: cover;
+}
+.works .img6 {
+  grid-row: 3;
+  grid-column: 2;
+  background: url(image/img7.png) center;
+  background-size: cover;
+}
+.works .img7 {
+  grid-row: 3;
+  grid-column: 6/8;
+  background: url(image/7.png) center;
+  background-size: cover;
+}
+.works .img8 {
+  grid-row: 3;
+  grid-column: 3/6;
+  background: url(image/img8.png) center;
+  background-size: cover;
+}
+.works .classes-btn1 {
+  grid-row: 4;
+  grid-column: 1/10;
+  justify-self: center;
+  align-self: center;
+  font-size: 14px;
+  border: 2px solid rgb(175, 4, 47);
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px 1px 10px 1px;
+  background-color: rgb(175, 4, 47);
+  transition: 0.5s ease-in-out;
+}
+.works .classes-btn1:hover {
+  letter-spacing: 1px;
+  box-shadow: 0 0 25px rgb(175, 4, 47);
+}
+.works .classes-btn1 .btn_classes1 {
+  margin-top: 10px;
+}
+.works .classes-btn1 a {
+  color: white;
+  font-weight: bold;
 }/*# sourceMappingURL=grid.css.map */
