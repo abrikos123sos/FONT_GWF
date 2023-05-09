@@ -1,200 +1,683 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Raleway&family=Roboto+Condensed&display=swap");
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #container {
-    cursor: default;
-    margin: 0 auto;
+  cursor: default;
+  margin: 0 auto;
+}
+#container #scrollShow {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 10;
+  transition: all 0.6s ease-in-out;
+}
+#container #scrollShow:hover {
+  transform: scale(0.9, 0.9);
+  fill: rgb(255, 0, 85);
+}
+#container .isShowBtn {
+  opacity: 1;
+}
+#container .isShowBtn_hide {
+  opacity: 0;
 }
 
 .title-head {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
-    border-bottom: 2px solid rgb(255, 0, 85);
-    align-items: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 590px 80px 80px 80px 80px 80px;
+  grid-template-rows: 2fr;
+  border-bottom: 2px solid rgb(255, 0, 85);
+  align-items: center;
+  justify-content: space-around;
 }
-
 .title-head a {
-    color: black;
-    font-weight: 300;
-    transition: 0.5s ease-in-out;
+  color: black;
+  font-weight: 300;
+  transition: 0.5s ease-in-out;
 }
-
 .title-head a:hover {
-    color: orange;
-    letter-spacing: 1px;
+  color: orange;
+  letter-spacing: 1px;
 }
-
 .title-head .png {
-    grid-column: 2;
-    width: 70px;
-    height: 70px;
+  grid-column: 1;
+  width: 70px;
+  height: 70px;
 }
 
 .body-content {
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr 5fr;
-    grid-template-rows: 1fr 70px;
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 1fr 70px;
+  justify-content: space-around;
 }
-
 .body-content .block-img {
-    grid-row: 1;
-    grid-column: 4;
-    justify-self: center;
-    width: 258px;
-    height: 311px;
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+  width: 258px;
+  height: 311px;
 }
-
 .body-content .title-page {
-    grid-row: 1;
-    grid-column: 2/4;
+  grid-row: 1;
+  grid-column: 1;
 }
-
 .body-content .title-page .three-moths {
-    font-weight: 400;
-    font-size: 17px;
+  font-weight: 400;
+  font-size: 17px;
 }
-
 .body-content .title-page .jobs {
-    font-weight: 400;
-    font-size: 17px;
+  font-weight: 400;
+  font-size: 17px;
 }
-
 .body-content .title-page .group {
-    font-weight: 400;
-    font-size: 17px;
+  font-weight: 400;
+  font-size: 17px;
 }
-
 .body-content .title-page .txt {
-    font-weight: bold;
-    text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
 .body-content .btn_1 {
-    grid-row: 2;
-    grid-column: 2;
-    width: 200px;
-    height: 35px;
-    border: 2px solid rgb(255, 0, 85);
-    border-radius: 10px 1px 10px 1px;
-    background-color: rgb(255, 0, 85);
-    transition: 0.5s ease-in-out;
+  grid-row: 2;
+  grid-column: 1;
+  width: 200px;
+  height: 35px;
+  border: 2px solid rgb(255, 0, 85);
+  border-radius: 10px 1px 10px 1px;
+  background-color: rgb(255, 0, 85);
+  transition: 0.5s ease-in-out;
 }
-
 .body-content .btn_1:hover {
-    box-shadow: 0 0 10px rgb(255, 0, 85);
-    letter-spacing: 1px;
-    background-color: rgb(151, 6, 66);
+  box-shadow: 0 0 10px rgb(255, 0, 85);
+  letter-spacing: 1px;
+  background-color: rgb(151, 6, 66);
 }
-
 .body-content .btn_1 .btn_lin {
-    text-align: center;
-    margin-top: 7px;
+  text-align: center;
+  margin-top: 7px;
 }
-
 .body-content .btn_1 a {
-    color: white;
+  color: white;
 }
-
 .body-content .btn_2 {
-    grid-row: 2;
-    grid-column: 3;
-    width: 200px;
-    height: 35px;
-    border: 2px solid rgb(255, 0, 85);
-    border-radius: 10px 1px 10px 1px;
-    background-color: white;
-    transition: 0.5s ease-in-out;
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: end;
+  width: 200px;
+  height: 35px;
+  border: 2px solid rgb(255, 0, 85);
+  border-radius: 10px 1px 10px 1px;
+  background-color: white;
+  transition: 0.5s ease-in-out;
 }
-
 .body-content .btn_2:hover {
-    box-shadow: 0 0 10px rgb(255, 0, 85);
-    letter-spacing: 1px;
-    background-color: rgb(151, 6, 66);
+  box-shadow: 0 0 10px rgb(255, 0, 85);
+  letter-spacing: 1px;
+  background-color: rgb(151, 6, 66);
 }
-
 .body-content .btn_2 .btn_lin1 {
-    text-align: center;
-    margin-top: 7px;
+  text-align: center;
+  margin-top: 7px;
 }
-
 .body-content .btn_2 a {
-    transition: 0.4s ease-in-out;
-    color: black;
+  transition: 0.4s ease-in-out;
+  color: black;
 }
-
 .body-content .btn_2 a:hover {
-    color: white;
+  color: white;
 }
 
 .course {
-    display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 100px 150px;
-    justify-content: space-around;
+  display: grid;
+  grid-template-columns: 390px 390px 390px;
+  grid-template-rows: 100px 200px 80px;
+  justify-content: space-around;
 }
-
 .course .info {
-    grid-row: 1;
-    grid-column: 1/3;
-    font-size: 30px;
-    font-weight: bold;
-    align-self: center;
+  grid-row: 1;
+  grid-column: 1/3;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: center;
 }
-
 .course .column1 {
-    grid-row: 2;
-    grid-column: 1;
-    background: url(image/download.jpg) center;
-    background-attachment: fixed;
-    background-size: cover;
-    border-radius: 20px 1px 20px 1px;
+  grid-row: 2;
+  grid-column: 1;
+  background: url(image/download.jpg) center;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 20px 1px 20px 1px;
 }
-
 .course .column1 .info-column1 {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
-
 .course li {
-    list-style-type: square;
-    font-weight: 400;
+  list-style-type: square;
+  font-weight: 400;
 }
-
 .course .column2 {
-    grid-row: 2;
-    grid-column: 2;
-    background: url(image/download.jpg) center;
-    background-attachment: fixed;
-    background-size: cover;
-    border-radius: 20px 1px 20px 1px;
+  grid-row: 2;
+  grid-column: 2;
+  background: url(image/download.jpg) center;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 20px 1px 20px 1px;
 }
-
 .course .column2 .info-column2 {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
-
 .course .column3 {
-    grid-row: 2;
-    grid-column: 3;
-    background: url(image/download.jpg) center;
-    background-attachment: fixed;
-    background-size: cover;
-    border-radius: 20px 1px 20px 1px;
+  grid-row: 2;
+  grid-column: 3;
+  background: url(image/download.jpg) center;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 20px 1px 20px 1px;
 }
-
 .course .column3 .info-column3 {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
+.about-course {
+  display: grid;
+  grid-template-columns: 400px 810px;
+  grid-template-rows: 80px 120px 120px 120px;
+  justify-content: space-around;
+}
+.about-course .about {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 30px;
+  font-weight: bold;
+}
+.about-course .block_img {
+  grid-row: 2/5;
+  grid-column: 2;
+  position: relative;
+}
+.about-course .block_img .img-about {
+  width: 100%;
+  height: 100%;
+}
+.about-course .row1 {
+  grid-row: 2;
+  grid-column: 1;
+  width: 250px;
+  height: 70px;
+  border: 2px solid rgb(255, 0, 85);
+  border-radius: 20px 1px 20px 1px;
+  text-align: center;
+  align-self: center;
+}
+.about-course .row1 .four {
+  font-weight: bold;
+  font-size: 26px;
+}
+.about-course .row2 {
+  grid-row: 3;
+  grid-column: 1;
+  width: 250px;
+  height: 70px;
+  border: 2px solid rgb(255, 0, 85);
+  border-radius: 20px 1px 20px 1px;
+  text-align: center;
+  align-self: center;
+}
+.about-course .row2 .ten {
+  font-weight: bold;
+  font-size: 26px;
+}
+.about-course .row3 {
+  grid-row: 4;
+  grid-column: 1;
+  width: 250px;
+  height: 70px;
+  border: 2px solid rgb(255, 0, 85);
+  border-radius: 20px 1px 20px 1px;
+  text-align: center;
+  align-self: center;
+}
+.about-course .row3 .six {
+  font-weight: bold;
+  font-size: 26px;
+}
 
-/*# sourceMappingURL=grid.css.map */
+.classes {
+  display: grid;
+  grid-template-columns: 400px 810px;
+  grid-template-rows: 150px 200px 120px;
+  justify-content: space-around;
+}
+.classes .about-classes {
+  grid-row: 1;
+  grid-column: 1/3;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: end;
+}
+.classes .info-data {
+  grid-row: 2;
+  grid-column: 1;
+}
+.classes .button_classes {
+  grid-row: 3;
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center;
+  width: 200px;
+  height: 35px;
+  border: 2px solid rgb(255, 0, 85);
+  border-radius: 10px 1px 10px 1px;
+  background-color: rgb(255, 0, 85);
+  transition: 0.5s ease-in-out;
+}
+.classes .button_classes .btn_cls {
+  text-align: center;
+  margin-top: 7px;
+}
+.classes .button_classes a {
+  color: white;
+}
+.classes .button_classes:hover {
+  box-shadow: 0 0 10px rgb(255, 0, 85);
+  letter-spacing: 1px;
+  background-color: rgb(151, 6, 66);
+}
+.classes .img-classes {
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+}
+.classes .img-classes .classes-img {
+  width: 100%;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 150px 350px 100px 350px 150px;
+  grid-template-rows: 100px 250px 250px 100px;
+  justify-content: space-around;
+  grid-row-gap: 25px;
+  width: 100%;
+}
+.work .img1 {
+  grid-row: 2;
+  grid-column: 1/3;
+}
+.work .img2 {
+  grid-row: 2;
+  grid-column: 3/5;
+}
+.work .img3 {
+  grid-row: 2;
+  grid-column: 5;
+}
+.work .img4 {
+  grid-row: 3;
+  grid-column: 1;
+}
+.work .img5 {
+  grid-row: 3;
+  grid-column: 4/6;
+}
+.work .img6 {
+  grid-row: 3;
+  grid-column: 2/4;
+}
+.work .work-about {
+  grid-row: 1;
+  grid-column: 1/3;
+  align-self: end;
+  font-size: 30px;
+  font-weight: bold;
+}
+.work .img-work {
+  width: 100%;
+  height: 100%;
+}
+.work .button_work {
+  grid-row: 4;
+  grid-column: 1/6;
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  width: 200px;
+  height: 35px;
+  border: 2px solid rgb(255, 0, 85);
+  border-radius: 10px 1px 10px 1px;
+  background-color: rgb(255, 0, 85);
+  transition: 0.5s ease-in-out;
+}
+.work .button_work .btn_wrk {
+  text-align: center;
+  margin-top: 7px;
+}
+.work .button_work a {
+  color: white;
+}
+.work .button_work:hover {
+  box-shadow: 0 0 10px rgb(255, 0, 85);
+  letter-spacing: 1px;
+  background-color: rgb(151, 6, 66);
+}
+
+.teacher {
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 70px 310px 310px 310px;
+  justify-content: space-around;
+  grid-row-gap: 25px;
+}
+.teacher .info1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.teacher .uix {
+  color: rgb(255, 0, 0);
+}
+.teacher a {
+  color: rgb(255, 0, 0);
+}
+.teacher .teach-head {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 30px;
+  font-weight: bold;
+}
+.teacher .teach1 {
+  grid-row: 2;
+  grid-column: 1;
+  border: 2px solid rgb(255, 0, 0);
+}
+.teacher .teach2 {
+  grid-row: 3;
+  grid-column: 1;
+  border: 2px solid rgb(255, 0, 0);
+}
+.teacher .teach3 {
+  grid-row: 4;
+  grid-column: 1;
+  border: 2px solid rgb(255, 0, 0);
+}
+.teacher .teach4 {
+  grid-row: 2;
+  grid-column: 2;
+  border: 2px solid rgb(255, 0, 0);
+}
+.teacher .teach5 {
+  grid-row: 3;
+  grid-column: 2;
+  border: 2px solid rgb(255, 0, 0);
+}
+.teacher .teach6 {
+  grid-row: 4;
+  grid-column: 2;
+  border: 2px solid rgb(255, 0, 0);
+}
+.teacher .teach-info1 {
+  justify-content: center;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  grid-template-columns: 200px 310px;
+  grid-template-rows: 10px 280px 10px;
+  grid-column-gap: 10px;
+}
+.teacher .teach-info1 .img-photo {
+  grid-row: 2/3;
+  grid-column: 1;
+}
+.teacher .teach-info1 .img-photo .photo1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.teacher .teach-info1 .txt-info {
+  grid-row: 2;
+  grid-column: 2;
+}
+.teacher .teach-info2 {
+  justify-content: center;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  grid-template-columns: 200px 330px;
+  grid-template-rows: 10px 280px 10px;
+  grid-column-gap: 10px;
+}
+.teacher .teach-info2 .img-photo2 {
+  grid-row: 2/3;
+  grid-column: 1;
+}
+.teacher .teach-info2 .img-photo2 .photo2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.teacher .teach-info2 .txt-info2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.teacher .teach-info3 {
+  justify-content: center;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  grid-template-columns: 200px 330px;
+  grid-template-rows: 10px 280px 10px;
+  grid-column-gap: 10px;
+}
+.teacher .teach-info3 .img-photo3 {
+  grid-row: 2/3;
+  grid-column: 1;
+}
+.teacher .teach-info3 .img-photo3 .photo3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.teacher .teach-info3 .txt-info3 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.teacher .teach-info4 {
+  justify-content: center;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  grid-template-columns: 200px 330px;
+  grid-template-rows: 10px 280px 10px;
+  grid-column-gap: 10px;
+}
+.teacher .teach-info4 .img-photo4 {
+  grid-row: 2/3;
+  grid-column: 1;
+}
+.teacher .teach-info4 .img-photo4 .photo4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.teacher .teach-info4 .txt-info4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.teacher .teach-info5 {
+  justify-content: center;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  grid-template-columns: 200px 330px;
+  grid-template-rows: 10px 280px 10px;
+  grid-column-gap: 10px;
+}
+.teacher .teach-info5 .img-photo5 {
+  grid-row: 2/3;
+  grid-column: 1;
+}
+.teacher .teach-info5 .img-photo5 .photo5 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.teacher .teach-info5 .txt-info5 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.teacher .teach-info6 {
+  justify-content: center;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  grid-template-columns: 200px 330px;
+  grid-template-rows: 10px 280px 10px;
+  grid-column-gap: 10px;
+}
+.teacher .teach-info6 .img-photo6 {
+  grid-row: 2/3;
+  grid-column: 1;
+}
+.teacher .teach-info6 .img-photo6 .photo6 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.teacher .teach-info6 .txt-info6 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.jobsearch {
+  display: grid;
+  grid-template-columns: 390px 390px 390px;
+  grid-template-rows: 100px 150px 150px;
+  grid-row-gap: 25px;
+  justify-content: space-around;
+}
+.jobsearch li {
+  list-style-type: square;
+}
+.jobsearch .txt-job {
+  font-size: 30px;
+  font-weight: bold;
+}
+.jobsearch .cols-1 {
+  grid-row: 2;
+  grid-column: 1;
+  background: url(image/background.png) center;
+  background-attachment: fixed;
+  border-radius: 20px 1px 20px 1px;
+}
+.jobsearch .cols-1 .txt-col1 {
+  text-align: center;
+  font-weight: bold;
+}
+.jobsearch .cols-2 {
+  grid-row: 2;
+  grid-column: 2;
+  background: url(image/background.png) center;
+  background-attachment: fixed;
+  border-radius: 20px 1px 20px 1px;
+}
+.jobsearch .cols-2 .txt-col2 {
+  text-align: center;
+  font-weight: bold;
+}
+.jobsearch .cols-3 {
+  grid-row: 2;
+  grid-column: 3;
+  background: url(image/background.png) center;
+  background-attachment: fixed;
+  border-radius: 20px 1px 20px 1px;
+}
+.jobsearch .cols-3 .txt-col3 {
+  text-align: center;
+  font-weight: bold;
+}
+.jobsearch .cols-4 {
+  grid-row: 3;
+  grid-column: 1;
+  background: url(image/background.png) center;
+  background-attachment: fixed;
+  border-radius: 20px 1px 20px 1px;
+}
+.jobsearch .cols-4 .txt-col4 {
+  text-align: center;
+  font-weight: bold;
+}
+.jobsearch .cols-5 {
+  grid-row: 3;
+  grid-column: 2;
+  background: url(image/background.png) center;
+  background-attachment: fixed;
+  border-radius: 20px 1px 20px 1px;
+}
+.jobsearch .cols-5 .txt-col5 {
+  text-align: center;
+  font-weight: bold;
+}
+.jobsearch .cols-6 {
+  grid-row: 3;
+  grid-column: 3;
+  background: url(image/background.png) center;
+  background-attachment: fixed;
+  border-radius: 20px 1px 20px 1px;
+}
+.jobsearch .cols-6 .txt-col6 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.employment {
+  display: grid;
+  grid-template-columns: 100px 1090px;
+  grid-template-rows: 150px 100px;
+  justify-content: space-around;
+}
+.employment .icons2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.employment .icons2 .image2 {
+  width: 100%;
+  height: 100%;
+}
+.employment .basic {
+  grid-row: 2;
+  grid-column: 1;
+  align-self: center;
+}
+.employment .icons-1 {
+  grid-row: 2;
+  grid-column: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.employment .txt-empl {
+  grid-row: 1;
+  grid-column: 1/3;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: end;
+}/*# sourceMappingURL=grid.css.map */
