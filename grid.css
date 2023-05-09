@@ -1,396 +1,200 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Raleway&family=Roboto+Condensed&display=swap");
 li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #container {
-  cursor: default;
+    cursor: default;
+    margin: 0 auto;
 }
 
 .title-head {
-  cursor: default;
-  display: grid;
-  grid-template-columns: 50px 500px auto auto auto auto auto auto;
-  grid-template-rows: 70px;
-  align-items: center;
-  border-bottom: 2px solid rgb(255, 0, 85);
-  border-radius: 1px;
-  box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    border-bottom: 2px solid rgb(255, 0, 85);
+    align-items: center;
 }
+
 .title-head a {
-  color: black;
-  transition: 0.6s ease-in-out;
+    color: black;
+    font-weight: 300;
+    transition: 0.5s ease-in-out;
 }
+
 .title-head a:hover {
-  letter-spacing: 2px;
+    color: orange;
+    letter-spacing: 1px;
 }
+
 .title-head .png {
-  grid-column: 2;
-  grid-row: 1;
-  width: 70px;
-  height: 70px;
-  justify-self: start;
-}
-.title-head .links {
-  grid-column: 3;
-  grid-row: 1;
-  justify-self: end;
-}
-.title-head .links1 {
-  grid-column: 4;
-  grid-row: 1;
-  justify-self: end;
-}
-.title-head .links2 {
-  grid-column: 5;
-  grid-row: 1;
-  justify-self: end;
-}
-.title-head .links3 {
-  grid-column: 6;
-  grid-row: 1;
-  justify-self: end;
-}
-.title-head .links4 {
-  grid-column: 7;
-  grid-row: 1;
-  justify-self: end;
+    grid-column: 2;
+    width: 70px;
+    height: 70px;
 }
 
 .body-content {
-  display: grid;
-  cursor: default;
-  grid-template-columns: 70px 250px 250px auto;
-  grid-template-rows: 250px 70px;
-  font-family: "Raleway", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 5fr;
+    grid-template-rows: 1fr 70px;
 }
+
 .body-content .block-img {
-  grid-column: 5;
-  grid-row: 1;
-  justify-self: center;
+    grid-row: 1;
+    grid-column: 4;
+    justify-self: center;
+    width: 258px;
+    height: 311px;
 }
-.body-content .block-img .picture {
-  width: 350px;
-  height: 350px;
-}
+
 .body-content .title-page {
-  grid-row: 1;
-  grid-column: 2/4;
+    grid-row: 1;
+    grid-column: 2/4;
 }
+
+.body-content .title-page .three-moths {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.body-content .title-page .jobs {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.body-content .title-page .group {
+    font-weight: 400;
+    font-size: 17px;
+}
+
 .body-content .title-page .txt {
-  text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
 .body-content .btn_1 {
-  grid-column: 2;
-  grid-row: 2;
-  border: 1px solid rgb(196, 4, 68);
-  border-radius: 20px 1px 20px 1px;
-  text-align: center;
-  width: 200px;
-  height: 40px;
-  background-color: rgb(196, 4, 68);
-  transition: 0.6s ease-in-out;
-  font-size: 14px;
+    grid-row: 2;
+    grid-column: 2;
+    width: 200px;
+    height: 35px;
+    border: 2px solid rgb(255, 0, 85);
+    border-radius: 10px 1px 10px 1px;
+    background-color: rgb(255, 0, 85);
+    transition: 0.5s ease-in-out;
 }
+
 .body-content .btn_1:hover {
-  background-color: rgb(170, 3, 59);
-  box-shadow: 0 0 10px rgb(196, 4, 68);
+    box-shadow: 0 0 10px rgb(255, 0, 85);
+    letter-spacing: 1px;
+    background-color: rgb(151, 6, 66);
 }
+
 .body-content .btn_1 .btn_lin {
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 7px;
 }
+
 .body-content .btn_1 a {
-  color: white;
+    color: white;
 }
+
 .body-content .btn_2 {
-  grid-column: 3;
-  grid-row: 2;
-  border: 1px solid rgb(196, 4, 68);
-  border-radius: 20px 1px 20px 1px;
-  text-align: center;
-  width: 200px;
-  height: 40px;
-  transition: 0.6s ease-in-out;
-  font-size: 14px;
+    grid-row: 2;
+    grid-column: 3;
+    width: 200px;
+    height: 35px;
+    border: 2px solid rgb(255, 0, 85);
+    border-radius: 10px 1px 10px 1px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
 }
-.body-content .btn_2 .btn_lin1 {
-  margin-top: 10px;
-}
+
 .body-content .btn_2:hover {
-  box-shadow: 0 0 10px rgb(196, 4, 68);
+    box-shadow: 0 0 10px rgb(255, 0, 85);
+    letter-spacing: 1px;
+    background-color: rgb(151, 6, 66);
 }
+
+.body-content .btn_2 .btn_lin1 {
+    text-align: center;
+    margin-top: 7px;
+}
+
 .body-content .btn_2 a {
-  color: black;
+    transition: 0.4s ease-in-out;
+    color: black;
 }
 
-.well {
-  display: grid;
-  cursor: default;
-  grid-template-columns: 350px 350px 350px;
-  grid-template-rows: 90px 250px;
-  font-family: "Open Sans", sans-serif;
-  justify-content: space-around;
-}
-.well .txt1 {
-  grid-row: 1;
-  grid-column: 1;
-  font-weight: bold;
-  font-size: 20px;
-  align-self: center;
-}
-.well .block1 {
-  grid-column: 1;
-  grid-row: 2;
-  word-spacing: 2px;
-  border: 1px solid black;
-  border-radius: 70px 1px 70px 1px;
-  background: url(image/download.jpg) center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.well .txt2 {
-  text-align: center;
-  font-weight: bold;
-}
-.well .list {
-  margin-top: 15%;
-}
-.well .list li {
-  list-style-type: square;
-}
-.well .block2 {
-  grid-column: 2;
-  grid-row: 2;
-  word-spacing: 2px;
-  border: 1px solid black;
-  border-radius: 70px 1px 70px 1px;
-  background: url(image/download.jpg) center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.well .txt2 {
-  text-align: center;
-  font-weight: bold;
-}
-.well .list {
-  margin-top: 15%;
-}
-.well .list li {
-  list-style-type: square;
-}
-.well .block3 {
-  grid-column: 3;
-  grid-row: 2;
-  word-spacing: 2px;
-  border: 1px solid black;
-  border-radius: 70px 1px 70px 1px;
-  background: url(image/download.jpg) center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.well .txt3 {
-  text-align: center;
-  font-weight: bold;
-}
-.well .list {
-  margin-top: 15%;
-}
-.well .list li {
-  list-style-type: square;
+.body-content .btn_2 a:hover {
+    color: white;
 }
 
-.title_about {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  grid-template-rows: 100px;
-  align-items: end;
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-}
-.title_about .p1 {
-  grid-column: 2;
+.course {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 100px 150px;
+    justify-content: space-around;
 }
 
-.about_course {
-  display: grid;
-  grid-template-columns: 30px 250px 180px auto 40px;
-  grid-template-rows: 80px 20px 80px 20px 80px;
-}
-.about_course .exp_course {
-  grid-row: 5;
-  grid-column: 2;
-  border: 2px solid rgb(196, 4, 68);
-  border-radius: 10px 1px 10px 1px;
-}
-.about_course .exp_course .exp {
-  text-align: center;
-  font-size: 18px;
-  padding-top: 5px;
-}
-.about_course .teach_course {
-  grid-row: 3;
-  grid-column: 2;
-  border: 2px solid rgb(196, 4, 68);
-  border-radius: 10px 1px 10px 1px;
-}
-.about_course .teach_course .teach {
-  text-align: center;
-  font-size: 18px;
-  padding-top: 5px;
-}
-.about_course .bel_course {
-  grid-row: 1;
-  grid-column: 2;
-  border: 2px solid rgb(196, 4, 68);
-  border-radius: 10px 1px 10px 1px;
-}
-.about_course .bel_course .bel {
-  text-align: center;
-  font-size: 18px;
-  padding-top: 5px;
-}
-.about_course .img {
-  grid-row: 1/6;
-  grid-column: 4;
-  background: url(image/img.png) center;
-  background-size: cover;
+.course .info {
+    grid-row: 1;
+    grid-column: 1/3;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
 }
 
-.classes {
-  display: grid;
-  grid-template-columns: 30px 250px 250px 500px auto;
-  grid-template-rows: 100px 100px 150px 100px;
-}
-.classes .classes-p1 {
-  grid-row: 1;
-  grid-column: 2;
-  align-self: end;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Open Sans", sans-serif;
-}
-.classes .classes-p2 {
-  grid-row: 2;
-  grid-column: 2/4;
-  font-weight: bold;
-}
-.classes .classes-p3 {
-  grid-row: 3;
-  grid-column: 2/4;
-  font-weight: bold;
-}
-.classes .classes-btn {
-  grid-row: 4;
-  grid-column: 1/6;
-  justify-self: center;
-  font-weight: bold;
-  align-self: center;
-  width: 200px;
-  height: 40px;
-  background-color: rgb(175, 4, 47);
-  border: 2px solid rgb(175, 4, 47);
-  border-radius: 10px 1px 10px 1px;
-  text-align: center;
-  transition: 0.5s ease-in-out;
-}
-.classes .classes-btn:hover {
-  box-shadow: 0 0 25px rgb(175, 4, 47);
-  letter-spacing: 1px;
-}
-.classes .classes-btn .btn_classes {
-  margin-top: 10px;
-}
-.classes .classes-btn a {
-  color: white;
-  font-size: 14px;
-}
-.classes .img2 {
-  grid-row: 2/4;
-  grid-column: 4;
-  background: url(image/img2.png) center;
-  background-size: cover;
+.course .column1 {
+    grid-row: 2;
+    grid-column: 1;
+    background: url(image/download.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px 1px 20px 1px;
 }
 
-.works {
-  display: grid;
-  grid-template-columns: 30px 150px 250px 50px 150px 350px 150px auto;
-  grid-template-rows: 100px 250px 250px 100px;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+.course .column1 .info-column1 {
+    text-align: center;
+    font-weight: bold;
 }
-.works .textwork {
-  grid-row: 1;
-  grid-column: 2/4;
-  font-size: 20px;
-  font-weight: bold;
-  align-self: center;
-  font-family: "Open Sans", sans-serif;
+
+.course li {
+    list-style-type: square;
+    font-weight: 400;
 }
-.works .img3 {
-  grid-row: 2;
-  grid-column: 2/5;
-  background: url(image/img3.png) center;
-  background-size: cover;
+
+.course .column2 {
+    grid-row: 2;
+    grid-column: 2;
+    background: url(image/download.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px 1px 20px 1px;
 }
-.works .img4 {
-  grid-row: 2;
-  grid-column: 5/7;
-  background: url(image/img4.png) center;
-  background-size: cover;
+
+.course .column2 .info-column2 {
+    text-align: center;
+    font-weight: bold;
 }
-.works .img5 {
-  grid-row: 2;
-  grid-column: 7;
-  background: url(image/img5.png) center;
-  background-size: cover;
+
+.course .column3 {
+    grid-row: 2;
+    grid-column: 3;
+    background: url(image/download.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px 1px 20px 1px;
 }
-.works .img6 {
-  grid-row: 3;
-  grid-column: 2;
-  background: url(image/img7.png) center;
-  background-size: cover;
+
+.course .column3 .info-column3 {
+    text-align: center;
+    font-weight: bold;
 }
-.works .img7 {
-  grid-row: 3;
-  grid-column: 6/8;
-  background: url(image/7.png) center;
-  background-size: cover;
-}
-.works .img8 {
-  grid-row: 3;
-  grid-column: 3/6;
-  background: url(image/img8.png) center;
-  background-size: cover;
-}
-.works .classes-btn1 {
-  grid-row: 4;
-  grid-column: 1/10;
-  justify-self: center;
-  align-self: center;
-  font-size: 14px;
-  border: 2px solid rgb(175, 4, 47);
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  border-radius: 10px 1px 10px 1px;
-  background-color: rgb(175, 4, 47);
-  transition: 0.5s ease-in-out;
-}
-.works .classes-btn1:hover {
-  letter-spacing: 1px;
-  box-shadow: 0 0 25px rgb(175, 4, 47);
-}
-.works .classes-btn1 .btn_classes1 {
-  margin-top: 10px;
-}
-.works .classes-btn1 a {
-  color: white;
-  font-weight: bold;
-}/*# sourceMappingURL=grid.css.map */
+
+
+/*# sourceMappingURL=grid.css.map */
